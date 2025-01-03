@@ -1,0 +1,64 @@
+/* styles.css */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #ff9800;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Increased the minimum size to 400px */
+    gap: 20px;
+}
+
+.image-card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+.image-card h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ff9800;
+}
+
+.image-card img {
+    width: 100%; /* Ensure the image fits its container */
+    height: auto;
+    border-radius: 4px;
+    max-height: 500px; /* Add this if you want to limit the height of larger images */
+}
+@media (max-width: 500px) {
+    .gallery {
+        grid-template-columns: 1fr; /* Display images in a single column on small screens */
+    }
+
+    .image-card {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .image-card h2 {
+        font-size: 16px; /* Slightly smaller font size for headers */
+    }
+
+    .image-card img {
+        max-height: 300px; /* Limit the height further for smaller screens */
+    }
+}
