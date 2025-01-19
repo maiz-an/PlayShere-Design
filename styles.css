@@ -7,6 +7,16 @@ body {
     padding: 0;
 }
 
+p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem;
+  color: #d1d1d1; 
+  text-align: center;
+  margin: 20px auto;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
